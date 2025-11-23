@@ -1,0 +1,10 @@
+run_id,timestamp,model,vendor,task,passed,latency_s,response_chars
+20251123T180452-09ecbe,2025-11-23T18:04:54,gpt-5-preview,openai,short_reasoning,False,,466
+20251123T180452-09ecbe,2025-11-23T18:04:54,gpt-5-preview,openai,code_generation,False,,466
+20251123T180452-09ecbe,2025-11-23T18:04:54,gpt-5-preview,openai,long_context,False,,466
+20251123T180452-09ecbe,2025-11-23T18:04:55,claude-sonnet-4.5,anthropic,short_reasoning,False,,173
+20251123T180452-09ecbe,2025-11-23T18:04:55,claude-sonnet-4.5,anthropic,code_generation,False,,173
+20251123T180452-09ecbe,2025-11-23T18:04:56,claude-sonnet-4.5,anthropic,long_context,False,,173
+20251123T180452-09ecbe,2025-11-23T18:05:09,gemini-3-pro,google,short_reasoning,False,,286
+20251123T180452-09ecbe,2025-11-23T18:05:21,gemini-3-pro,google,code_generation,False,,286
+20251123T180452-09ecbe,2025-11-23T18:05:33,gemini-3-pro,google,long_context,False,,286

@@ -1,0 +1,3 @@
+OPENAI_API_KEY=ta_cle_openai
+ANTHROPIC_API_KEY=ta_cle_anthropic
+GOOGLE_API_KEY=ta_cle_google
