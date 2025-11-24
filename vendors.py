@@ -1,7 +1,10 @@
 ﻿import os
 import openai
 import asyncio
-import tiktoken
+try:
+    import tiktoken
+except Exception:
+    tiktoken = None
 from utils import strip_json
 
 
