@@ -8,10 +8,24 @@ Google Gemini 3 class, plus extra model IDs if you wish).
 import os, time, json, uuid, pathlib, base64, traceback, contextlib
 from datetime import datetime
 import pandas as pd
+import yaml
 from dotenv import load_dotenv
 from rich import print as rprint
 
 load_dotenv()  # pulls keys from .env if present
+
+# Optional: load a rate card from `rate_card.yaml` if present
+RATE_CARD = None
+RATE_CARD_PATH = pathlib.Path("rate_card.yaml")
+if RATE_CARD_PATH.exists():
+    try:
+        with RATE_CARD_PATH.open("r", encoding="utf-8") as fh:
+            RATE_CARD = yaml.safe_load(fh)
+        rprint(f"[green]Loaded rate_card.yaml ({RATE_CARD_PATH})[/]")
+    except Exception as _e:
+        rprint(f"[red]Failed to load rate_card.yaml:[/] {_e}")
+else:
+    rprint(f"[yellow]rate_card.yaml not found at {RATE_CARD_PATH}[/]")
 
 ###############################################################################
 # 0. CONFIG ------------------------------------------------------------------- #
