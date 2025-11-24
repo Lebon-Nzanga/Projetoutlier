@@ -1,0 +1,18 @@
+models:
+  - id: gpt-5-preview
+    vendor: openai
+  - id: claude-sonnet-4.5
+    vendor: anthropic
+  - id: gemini-3-pro
+    vendor: google
+tasks:                         # turn tests on/off here
+  - short_reasoning
+  - code_generation
+  - long_context
+  - math_tool
+  - sql_generation
+  - multilingual
+  - citation_rag
+  - safety_redteam
+  - vision_chart
+concurrency: 8
